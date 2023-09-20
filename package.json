@@ -1,0 +1,17 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A Heft tutorial project",
+  "license": "MIT",
+  "main": "lib/start.js",
+  "typings": "lib/start.d.ts",
+  "scripts": {
+    "start": "node lib/start.js"
+  },
+  "devDependencies": {
+    "@rushstack/heft": "^0.60.0",
+    "@rushstack/heft-typescript-plugin": "^0.2.1",
+    "@types/node": "20.6.3",
+    "typescript": "^5.2.2"
+  }
+}

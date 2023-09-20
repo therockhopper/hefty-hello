@@ -16,7 +16,18 @@
             // This task will invoke the TypeScript plugin
             "pluginPackage": "@rushstack/heft-typescript-plugin"
           }
-        }
+        },
+        // Define a task whose name is "lint"
+        "lint": {
+         // This task should run after "typescript" has completed
+         // because Heft optimizes ESLint by reusing the TypeScript
+         // compiler's AST analysis
+         "taskDependencies": ["typescript"],
+         "taskPlugin": {
+           // This task will invoke the ESLint plugin
+           "pluginPackage": "@rushstack/heft-lint-plugin"
+         }
+       }
       }
     },
     // Define a phase whose name is "test"

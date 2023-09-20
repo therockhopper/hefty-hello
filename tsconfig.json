@@ -17,7 +17,7 @@
     "noEmitOnError": false,
     "allowUnreachableCode": false,
 
-    "types": ["node"],
+    "types": ["node", "heft-jest"],
     "module": "commonjs",
     "target": "es2017",
     "lib": ["es2017"]

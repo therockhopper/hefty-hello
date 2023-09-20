@@ -6,11 +6,15 @@
   "main": "lib/start.js",
   "typings": "lib/start.d.ts",
   "scripts": {
+    "build": "heft build --clean",
+    "test": "heft test --clean",
     "start": "node lib/start.js"
   },
   "devDependencies": {
     "@rushstack/heft": "^0.60.0",
+    "@rushstack/heft-jest-plugin": "^0.9.1",
     "@rushstack/heft-typescript-plugin": "^0.2.1",
+    "@types/heft-jest": "1.0.4",
     "@types/node": "20.6.3",
     "typescript": "^5.2.2"
   }
